@@ -1,0 +1,100 @@
+#google {
+    font-size: 20px;
+    color: black;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    transition: 3s;
+}
+
+/* centred so boxes did not overlap */
+#centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* pseudo classes */
+#google:hover {
+    font-size: 30px;
+}
+#google:visited {
+    color: silver;
+}
+
+.box:hover {
+    width: 200px;
+    height: 200px;
+    background-color: #cd7f32;
+    margin-left: 100px;
+}
+
+/* transform 
+degree can be between -360 to 360*/
+#box2 {
+    transform: rotate(45deg);
+}
+#box3 {
+    transform: skew(10deg);
+}
+
+/* scale value is (x(width), y(height)
+can do scaleX or Y to only target one value*/
+#box4 {
+    transform: scale(2,3);
+}
+
+/* translate value same as scale
+cab do translateX or Y to only target one value*/
+#box5:hover {
+    transform: translate(20px, 50px);
+}
+
+/* keyframes */
+#box6 {
+    animation-name: colorful-text;
+    animation-duration: 5s;
+}
+
+@keyframes colorful-text {
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: orange;
+        width: 150px;
+    }
+    40% {
+        background-color: yellow;
+        width: 200px;
+    }
+    60% {
+        background-color: green;
+        width: 150px;
+    }
+    80% {
+        background-color: royalblue;
+        width: 200px;
+    }
+    100% {
+        background-color: rebeccapurple;
+    }
+}
+
+#box7:hover {
+    animation-name: colorful-text;
+    animation-duration: 2s;
+}
+
+/* allows to do only one sort of animation */
+@keyframes colorful-text {
+    from {
+        background-color: cornflowerblue;
+    }
+    to {
+        background-color: rgb(84, 194, 194);
+    }
+}
