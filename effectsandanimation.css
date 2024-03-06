@@ -53,8 +53,13 @@ cab do translateX or Y to only target one value*/
     transform: translate(20px, 50px);
 }
 
+/* can do multiple transforms, code needs to be on same line */
+#box6:hover {
+    transform: scale(2,2) rotate(135deg)
+}
+
 /* keyframes */
-#box6 {
+#box7:hover{
     animation-name: colorful-text;
     animation-duration: 5s;
 }
@@ -69,32 +74,31 @@ cab do translateX or Y to only target one value*/
     }
     40% {
         background-color: yellow;
-        width: 200px;
     }
     60% {
         background-color: green;
-        width: 150px;
     }
     80% {
         background-color: royalblue;
-        width: 200px;
+        width: 150px;
     }
     100% {
         background-color: rebeccapurple;
     }
 }
 
-#box7:hover {
+#box8 {
     animation-name: colorful-text;
     animation-duration: 2s;
 }
 
-/* allows to do only one sort of animation */
-@keyframes colorful-text {
+/* can also do from and to keyframes for simplier animations */
+/* commenting out this keyframe until can find a solution of using two diff keyframes under one css file */
+/* @keyframes colorful-text {
     from {
         background-color: cornflowerblue;
     }
     to {
-        background-color: rgb(84, 194, 194);
+        background-color: #54c2c2;
     }
-}
+} */
