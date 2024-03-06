@@ -1,0 +1,52 @@
+body {
+    background-color:cadetblue
+}
+
+/* will remain the same size regardless of viewport */
+.bigbox {
+    width: 400px;
+    height: 400px;
+    background-color: chocolate
+}
+
+/* % will allow size of box to adapt depending on viewport
+can be used on width or height */
+#responsivebigbox {
+    width: 75%;
+    height: 400px;
+    background-color: #cc71df;
+    padding: 20px;
+    margin: 10px
+}
+
+/* inline-block display allows the tiny boxes to be positioned next to one other but as viewport gets smaller, they will begin to wrap down*/
+.tinybox {
+    width: 200px;
+    height: 200px;
+    background-color: deeppink;
+    margin: 5px;
+    display: inline-block
+}
+
+.mediabreakpointexample {
+    font-size: 50px;
+}
+
+/* media breakpoint must be written as below
+max-width can be changed to min/height 
+
+ideally the page would cater towards smaller viewports first
+if only styling for desktop size, it's harder to convert styling to mobile size*/
+@media screen and (max-width: 800px) {
+    .mediabreakpointexample {
+        font-size: 35px;
+        color: darkorange
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mediabreakpointexample {
+        font-size: 20px;
+        color: maroon;
+    }
+}

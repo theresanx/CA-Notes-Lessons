@@ -1,0 +1,19 @@
+/* external stylesheet */
+h1{
+    color: red;
+    text-align: center
+}
+
+.para {
+    color: pink;
+    font-size: 30px
+}
+
+#p4 {
+    border: 2px solid blue
+}
+
+button:hover {
+    background-color: #eaa6f7;
+    color: white
+}

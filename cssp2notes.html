@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- can style multiple elements by using , in between selectors -->
+        <style>
+            h1,
+            #p1 {
+                color: red
+            }
+
+            /* boxmodel */
+            #p2 {
+                background-color: pink;
+                padding: 0;
+                margin: 0
+            }
+            div {
+                background-color: lightblue;
+                border: 5px solid black;
+                padding: 10px;
+                margin: 10px 50px 100px 20px
+            }
+
+            #boxsize1 {
+                height: 100px;
+                width: 100px;
+                background-color: yellow
+            }
+            #bs2 {
+                height: 100px;
+                width: 100px;
+                padding: 20px;
+                background-color: silver
+            }
+            #bs3 {
+                height: 100px;
+                width: 100px;
+                margin: 20px;
+                background-color: gold
+            }
+            #bs4 {
+                height: 100px;
+                width: 100px;
+                border: 20px solid black;
+                background-color: #cd7f32
+            }
+
+            .borderbox {
+                box-sizing: border-box
+            }
+            #bs5 {
+                height: 100px;
+                width: 100px;
+                background-color: #cd3280
+            }
+            #bs6 {
+                height: 100px;
+                width: 100px;
+                padding: 20px;
+                background-color: #32cd7f
+            }
+            #bs7 {
+                height: 100px;
+                width: 100px;
+                margin: 20px;
+                background-color: #32cdcd
+            }
+            #bs8 {
+                height: 100px;
+                width: 100px;
+                border: 20px solid black;
+                background-color: #cd3232
+            }
+
+            .blocklevel {
+                background-color: green;
+                color: white;
+                border: 1px solid black;
+                font-size: 20px;
+                margin: 0
+            }
+            .inlinelevel {
+                background-color: blue;
+                color: white;
+                border: 5px solid black;
+                font-size: 20px;
+                margin: 0
+            }
+            #bl3 {
+                display: inline
+            }
+            #il3 {
+                display: block
+            }
+
+            .static {
+                width: 100px;
+                height: 100px;
+                margin: 0;
+                padding: 0;
+                border: 0
+            }
+            #box1 {
+                background: #e5e51a
+            }
+            #box2 {
+                background: #e51a1b
+            }
+            #box3 {
+                background: #1a80e5
+            }
+
+            .relative {
+                width: 100px;
+                height: 100px;
+                margin: 0;
+                padding: 0;
+                border: 0
+            }
+            #box4 {
+                background: #61eff2
+            }
+            #box5 {
+                background: #f261ef;
+                position: relative;
+                left: 150px;
+                bottom: 50px
+            }
+            #box6 {
+                background: #eff261
+            }
+
+            .absolute {
+                width: 100px;
+                height: 100px;
+                margin: 0;
+                padding: 0;
+                border: 0
+            }
+            #box7 {
+                background: #a1de65
+            }
+            #box8 {
+                background: #b07ae3;
+                position: absolute;
+                top: 2200px;
+                right: 10px;
+                }
+            #box9 {
+                background: #dea365
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Heading 1</h1>
+        <p id="p1" class="para">Paragraph 1</p>
+
+        <!-- Box Model
+        pink - content edge
+        blue - padding edge
+        black - border edge
+        white - margin edge 
+        margin dims go clockwise - top right bottom left-->
+        <div id="boxmodel">
+            <p id="p2" class="para">Paragraph 2</p>
+        </div>
+
+        <!-- Content Box - default sizing for elements
+        boxsize1 - no padding, margin or border
+        bs2 - padding, no margin or border (adds to size of element)
+        bs3 - margin, no padding or border (adds space around element **does not add to size of element)
+        bs4 - border, no padding or margin (adds to size of element) -->
+        <p id="boxsize1" class="contentbox">Paragraph 3</p>
+        <p id="bs2" class="contentbox">Paragraph 4</p>
+        <p id="bs3" class="contentbox">Paragraph 5</p>
+        <p id="bs4" class="contentbox">Paragraph 6</p>
+
+        <!-- Border Box (add box-sizing property)
+        bs5 - no padding, margin or border
+        bs6 - padding, no margin or border (does not add to size of element)
+        bs7 - margin, no padding or border (adds space around element)
+        bs8 - border, no padding or margin (does not add to size of element)-->
+        <p id="bs5" class="borderbox">Paragraph 7</p>
+        <p id="bs6" class="borderbox">Paragraph 8</p>
+        <p id="bs7" class="borderbox">Paragraph 9</p>
+        <p id="bs8" class="borderbox">Paragraph 10</p>
+
+        <!-- Block Level
+         Takes up entire horizontal space of parent element and as much vertical space as its content
+         Can change to inline level using display property - #bl3-->
+        <p id="bl1" class="blocklevel">One</p>
+        <p id="bl2" class="blocklevel">Two</p>
+        <p id="bl3" class="blocklevel">Three</p>
+
+        <!-- Inline Level
+         Does not start on new line, only takes up as much horizontal space as required as content
+         Can change to border level using display property - #il3-->
+        <span id="il1" class="inlinelevel">Four</span>
+        <span id="il2" class="inlinelevel">Five</span>
+        <span id="il3" class="inlinelevel">Six</span>
+
+        <!-- Static Positioning
+        Positioned according to flow of document -->
+        <div id="box1" class="static">A</div>
+        <div id="box2" class="static">B</div>
+        <div id="box3" class="static">C</div>
+
+        <!-- Relative Positioning
+        Positioned relative to element's normal position - can use top, bottom, right, left
+        Eg. property bottom will move it Xpx from bottom -->
+        <div id="box4" class="relative">D</div>
+        <div id="box5" class="relative">E</div>
+        <div id="box6" class="relative">F</div>
+
+        <!-- Absolute Positioning
+        Positioned relative to first parent element with set position-->
+        <div id="box7" class="absolute">G</div>
+        <div id="box8" class="absolute">H</div>
+        <div id="box9" class="absolute">I</div>
+
+        <a href="t1w1sat.html">Link to T1W1 Sat Intro to CSS</a>
+        <br>
+        <a href="http://127.0.0.1:5500/T1W2/responsivecssnotes.html" style="font-size: 20px;">Link to Notes on Responsive CSS</a>
+
+    </body>
+</html>

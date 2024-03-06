@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes on CSS</title>
+
+        <!-- css ruleset consists of selector{property:property value} 
+        4 types of selectors - type, class, id and pseudo
+        p:pv section is called a declaration-->
+
+        <!-- internal stylesheet - defined with style tag -->
+        <style>
+            h1 {
+                color: #f54284;
+                text-align: center
+            }
+            .para {
+                color: blue;
+                font-size: 20px
+            }
+            #p4 {
+                border: 1px solid black
+            }
+            button:hover {
+                background-color: #77e03f
+            }
+            #absolute{
+                width: 100px;
+                height: 100px
+            }
+            #relative{
+                width: 20vw;
+                height: 20vh
+            }
+        </style>
+
+        <!-- for precise colour, use HEX # on colour picker -->
+        <!-- selector only needs to be defined once, can add another property with ; in between -->
+
+        <!-- specificity - inline style > id > class > element -->
+
+    </head>
+    <body>
+
+        <!-- multipe elements can be given class property whereas id is unique -->
+        <h1 id="title" class="title">Heading 1</h1>
+        <p id="p1" class="para">Paragraph 1</p>       
+        <p id="p2" class="para">Paragraph 2</p>  
+        <p id="p3" class="para">Paragraph 3</p> 
+        <p id="p4" class="para">Paragraph 4</p> 
+        <button>Click here</button>
+        <br></br>
+        <img src="PokC3A9mon_Pikachu_art.png" id="absolute"/>
+        <img src="PokC3A9mon_Pikachu_art.png" id="relative"/>
+        <br></br>
+
+        <!-- inline styling -->
+        <p style="font-size:50px">Paragraph 5</p> 
+
+        <!-- class when referenced is represented with . in front -->
+        <!-- id when referenced is represented with # in front -->
+
+        <!-- absolute unit refers to fixed size
+        eg. px, cm, mm -->
+        <!-- relative unit changes with respect to size of parent element or screen size
+        eg. %, em, vw, vh-->
+
+        <a href="externalcssnotes.html">Link to External CSS</a>
+        <br>
+        <a href="cssp2notes.html" style="font-size:20px;">Link to Notes on CSS Part 2</a>
+
+    </body>
+</html>

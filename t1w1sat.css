@@ -1,0 +1,57 @@
+/* asterisks mean that the property is for entirety of the page */
+* {
+    margin: 0;
+    padding: 0
+}
+
+h1 {
+    color: rgba(238, 95, 166, 0.925);
+    background-color: #5dcce5;
+}
+
+#h2 {
+    color: aquamarine;
+}
+
+.heading3 {
+    color:red;
+}
+
+h3 {
+    background-color: #ab7fc5;
+}
+
+/*multiple styles for li - only last style will be applicable assuming specificity priority is the same
+inline styling > id > class > element*/
+li {
+    background-color: chocolate;
+}
+
+/* nth child where n is a placeholder for a number
++1 makes it start from top, +2 will start from second*/
+li:nth-child(3n+1) {
+    background-color: cadetblue;
+}
+
+li:nth-child(even) {
+    background-color: crimson;
+}
+
+li:nth-child(odd)::marker {
+    color: lightgreen
+}
+
+p {
+    font-size: 2rem;
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+img {
+    height: 10vw;
+    width: 10vw
+}
+
+a {
+    color: black
+}

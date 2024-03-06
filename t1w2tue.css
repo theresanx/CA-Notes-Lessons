@@ -1,0 +1,10 @@
+/* Default style for small screen and anything not caught by @media */
+body {
+    background-color: lightcoral;}
+
+/* Style for screens 600px wide or larger */
+    @media screen and (min-width: 600px) {
+    body {
+        background-color: lightseagreen;}
+    
+    }

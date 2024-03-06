@@ -1,0 +1,85 @@
+<!-- this is a comment, can use ctrl+/ -->
+
+<!-- indicates version of html doc -->
+<!DOCTYPE html> 
+
+<!-- html element - consists of <tag>content</tag> -->
+
+<html>
+
+    <!-- not visible on webpage -->
+    <head>
+        <title>Notes on HTML</title>
+    </head> 
+
+    <!-- visible on webpage -->
+    <body> 
+        <!-- up to 6 headings -->
+        <h1 id="top">Heading 1/Top</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3> 
+        <!-- h7+ will default to paragraph text -->
+        <h7>Heading 7</h7>
+        <p>Paragraph 1</p> 
+
+        <!-- hyperlink reference, can use on image
+        when linking website to image, must be in order of <a><img>-->
+        <a href="https://www.vectorstock.com/royalty-free-vector/colorful-letter-o-vector-20527149">
+
+            <!-- image sourcing -->
+            <img src="https://cdn.vectorstock.com/i/1000x1000/71/49/colorful-letter-o-vector-20527149.webp" style="width: 100px; height: 100px"/>
+        </a>
+
+        <!-- also for text -->
+        <a href="https://www.vectorstock.com/royalty-free-vector/colorful-letter-o-vector-20527149">Image</a>
+
+        <!-- unordered list -->
+        <ul>
+            <!-- list item -->
+            <li>
+                a
+            </li>
+            <li>
+                b
+            </li>
+        </ul>
+        <!-- ordered list -->
+        <ol>
+            <li>
+                a
+            </li>
+            <li>
+                b
+            </li>
+        </ol>
+
+        <!-- absolute path - points to complete path, can be from internet link or local file -->
+        <img src="https://cdn.vectorstock.com/i/1000x1000/71/49/colorful-letter-o-vector-20527149.webp" style="width: 100px; height: 100px"/>
+        <!-- relative path - points to another file location in current file -->
+        <img src="PokC3A9mon_Pikachu_art.png" style="width: 100px; height: 100px"/>
+
+        <!-- incomplete image source path with/without alt attribute 
+        highly recommended in img tags-->
+        <img src="PokC3A9mon_Pikachu_art.p"/>
+        <img src="PokC3A9mon_Pikachu_art.p" alt="pikachu"/>
+
+        <!-- id is used to anchor to different sections of the same page -->
+        <h6 id="bottom">Bottom</h6>
+        <!-- id referenced in tag is represented with # in front -->
+        <a href="#top">Back to top</a>
+
+        <!--<br> gives breaks between text, does not require closing tag-->
+        <br>
+
+        <!-- relative path used to link to different html page -->
+        <a href="relativepathexample.html">Go to 2nd html</a>
+     
+        <!-- semantic tag clearly describes meaning to browser/developer - eg. <form>, <table>, <article> 
+        non-semantic tag eg. <div>, <span> -->
+        
+        <br>
+        
+        <a href="cssnotes.html" style="font-size:20px;">Link to Notes on CSS</a>
+        
+    </body>
+</html>
