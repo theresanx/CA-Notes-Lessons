@@ -1,0 +1,41 @@
+.container {
+    width: 100%;
+    height: 800px;
+    padding: 10px;
+    background: salmon;
+
+    /* will accomodate to size of viewport */
+    display: flex;
+
+    /* can be either column (vertical) or row (horizontal) */
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    /* aligns content dependant on flex direction:
+    for direction row - flex-start will align content from left, flex-end will align from right
+    for direction column - flex-start with align content from top, flex-end will align from bottom
+    can also be centre or space-between 
+    for row - would consider this x axis, for column - would consider this y axis*/
+    justify-content: space-between;
+    
+    /* for row - would consider this y axis, for column - would consider this x axis */
+    align-items: flex-end;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: darkseagreen;
+}
+
+/* to centre using flexbox */
+.centre {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    background: #72b1fa;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
