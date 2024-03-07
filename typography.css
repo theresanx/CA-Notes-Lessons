@@ -1,0 +1,17 @@
+#p1 {
+    /* em meaning n times the default size */
+    font-size: 2em;
+
+    /* can be numerical value but is dependant on font family
+    some fonts don't support certain font weights*/
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#h2 {
+    font-weight: 400;
+}
+
+#p2 {
+    font-family: "Inconsolata", monospace;
+}

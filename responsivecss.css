@@ -35,7 +35,7 @@ can be used on width or height */
 /* media breakpoint must be written as below
 max-width can be changed to min/height 
 
-ideally the page would cater towards smaller viewports first
+ideally the page should cater towards smaller viewports first
 if only styling for desktop size, it's harder to convert styling to mobile size*/
 @media screen and (max-width: 800px) {
     .mediabreakpointexample {

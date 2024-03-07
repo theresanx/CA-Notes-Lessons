@@ -25,7 +25,7 @@
     color: silver;
 }
 
-.box:hover {
+.box:hover   {
     width: 200px;
     height: 200px;
     background-color: #cd7f32;
@@ -60,11 +60,11 @@ cab do translateX or Y to only target one value*/
 
 /* keyframes */
 #box7:hover{
-    animation-name: colorful-text;
+    animation-name: colorful-bkgd;
     animation-duration: 5s;
 }
 
-@keyframes colorful-text {
+@keyframes colorful-bkgd {
     0% {
         background-color: red;
     }
@@ -87,18 +87,17 @@ cab do translateX or Y to only target one value*/
     }
 }
 
-#box8 {
-    animation-name: colorful-text;
+#box8:hover {
+    animation-name: onecolortransition;
     animation-duration: 2s;
 }
 
 /* can also do from and to keyframes for simplier animations */
-/* commenting out this keyframe until can find a solution of using two diff keyframes under one css file */
-/* @keyframes colorful-text {
+@keyframes onecolortransition {
     from {
         background-color: cornflowerblue;
     }
     to {
         background-color: #54c2c2;
     }
-} */
+}
