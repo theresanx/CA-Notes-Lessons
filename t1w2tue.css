@@ -1,10 +1,46 @@
-/* Default style for small screen and anything not caught by @media */
+/* default style for small screen and anything not caught by @media */
 body {
-    background-color: lightcoral;}
+    background-color: lightseagreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-/* Style for screens 600px wide or larger */
-    @media screen and (min-width: 600px) {
-    body {
-        background-color: lightseagreen;}
-    
+h3 {
+    display: block;
+}
+
+/* if there is no class for .nestedcontent, this is how they can also be referenced */
+div > span > span {
+    font-size: 20px;
+}
+
+.column {
+    width: 100%;
+  }
+
+  /* clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/* style for screens 600px wide or larger */
+@media screen and (min-device-width: 600px) and (min-width:600px) {
+    body {background-color: lightcoral;
     }
+
+    /* will remove h3 */
+    h3 {
+        display:none
+    }
+
+    /* create three equal columns that float next to each other
+    float is alternative option to flexbox */
+    .column {
+        float: left;
+        width: 33.33%;
+      }
+}
+
+
