@@ -1,0 +1,55 @@
+// sass similar to scss, both have same functionality but are diff extension syntaxes 
+
+/** to transmit .scss to .css, add below command into terminal:
+sass --watch sass.scss:sass.css
+**/
+
+body {
+    color: darkslateblue;
+}
+/** variable is single value, indicated by $
+where primary-color is variable name **/
+$primary-color: darkcyan;
+$secondary-color: darkred;
+
+h1 {
+    color: $primary-color
+}
+
+p {
+    color: beige;
+    font-size: 5vh;
+    background-color: $secondary-color;
+}
+
+/** mixin is an entire collection of attributes
+where fancy-text is mixin name **/
+@mixin fancy-text {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+// use @include to import mixin styling
+h2 {
+    @include fancy-text();
+    font-style: italic;
+}
+
+// nesting - add selector into ruleset
+.listing {
+    border: 10px solid $primary-color;
+    li {
+        background-color: darkgoldenrod;
+        a {
+            @include fancy-text
+        }
+    }
+}
+
+/** inheritance allows extension of existing ruleset
+use @extend to import existing ruleset into new ruleset **/
+button {
+    @extend p;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
