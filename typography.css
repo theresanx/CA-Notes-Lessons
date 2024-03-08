@@ -3,7 +3,7 @@
     font-size: 2em;
 
     /* can be numerical value but is dependant on font family
-    some fonts don't support certain font weights*/
+    some fonts don't support certain font weights */
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
